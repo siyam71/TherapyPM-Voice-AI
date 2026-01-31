@@ -1,0 +1,29 @@
+th{
+    background-color: #EFF1F6 !important;
+}
+
+/* Sticky first column */
+.single-outbound-calls-table th:nth-child(1),
+.single-outbound-calls-table td:nth-child(1) {
+    position: sticky;
+    left: 0;
+    background: #fff !important;
+    z-index: 2;
+}
+
+/* Sticky second column */
+.single-outbound-calls-table th:nth-child(2),
+.single-outbound-calls-table td:nth-child(2) {
+    position: sticky;
+    left: 120px; /* width of first column */
+    background: #fff;
+    z-index: 3;
+}
+
+/* Optional: keep header on top */
+.single-outbound-calls-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    background: #e9f2f3;
+}
